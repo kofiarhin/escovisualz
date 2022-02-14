@@ -1,0 +1,49 @@
+#banner {
+  background-image: url("../images/banner.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.slug-wrapper {
+  position: absolute;
+  width: 540px;
+  max-width: 90%;
+  top: 40%;
+  left: 5%;
+  background-color: rgba(black, 0.4);
+  padding: 2rem;
+  color: white;
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+
+  .button-wrapper a {
+    display: inlihe-block;
+    color: white;
+    background-color: rgb(133, 2, 2);
+    padding: 1rem 3rem;
+    cursor: pointer;
+  }
+}
+// media queries
+@media (max-width: 800px) {
+  #banner .slug-wrapper {
+    left: 50%;
+    transform: translateX(-50%);
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.8rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+}

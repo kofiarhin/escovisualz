@@ -1,0 +1,64 @@
+#navigation {
+  .nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0rem;
+
+    .menu {
+      font-size: 2rem;
+      cursor: pointer;
+      display: none;
+    }
+
+    h1 {
+      color: white;
+      text-transform: capitalize;
+      font-size: 2.5rem;
+    }
+
+    .links a {
+      display: inline-block;
+      margin-left: 1rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: white;
+      border-bottom: 5px solid transparent;
+      padding: 1rem 0rem;
+      transition: all ease-in-out 300ms;
+      &.active,
+      &:hover {
+        border-bottom: 5px solid white;
+        transition: all ease-in-out 300ms;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  #navigation {
+    .nav-wrapper {
+      position: fixed;
+      padding: 2rem;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: white;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .menu {
+        display: block;
+      }
+
+      h1 {
+        color: black;
+      }
+      .links {
+        display: none;
+      }
+    }
+  }
+}
