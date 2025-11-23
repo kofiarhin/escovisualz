@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+
+#landing {
+  min-height: 100vh;
+  padding: 3rem 1.5rem;
+  box-sizing: border-box;
+  background: radial-gradient(circle at top, #2a2a2a 0, #050505 55%, #000 100%);
+  color: #f5f5f5;
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#landing .landing-inner {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#landing .landing-header {
+  margin-bottom: 2rem;
+}
+
+#landing .brand-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 1.1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+}
+
+#landing .hero {
+  position: relative;
+}
+
+#landing .hero-title {
+  font-size: 1.9rem;
+  line-height: 1.2;
+  font-weight: 800;
+  margin: 0 0 1.2rem;
+}
+
+#landing .hero-title-break {
+  display: block;
+}
+
+#landing .hero-subtitle {
+  max-width: 34rem;
+  margin: 0 auto 1.8rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #c3c3c3;
+}
+
+#landing .primary-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 2.4rem;
+  margin-bottom: 1.6rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: linear-gradient(135deg, #ffffff, #d6d6d6);
+  color: #111111;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.18s ease-out, box-shadow 0.18s ease-out,
+    background 0.18s ease-out, border-color 0.18s ease-out;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.6);
+}
+
+#landing .primary-cta:hover {
+  transform: translateY(-2px);
+  background: #ffffff;
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7);
+}
+
+#landing .primary-cta:active {
+  transform: translateY(0);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.6);
+}
+
+#landing .hero-note {
+  max-width: 36rem;
+  margin: 0.2rem auto 0;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: #9f9f9f;
+}
+
+#landing .hero-note a {
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+#landing .hero-note a:hover {
+  text-decoration-thickness: 2px;
+}
+
+#landing .landing-footer {
+  margin-top: 3.2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 1.4rem;
+}
+
+#landing .footer-text {
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #7f7f7f;
+}
+
+/* glow accent behind title */
+#landing .hero-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  width: 420px;
+  max-width: 80vw;
+  height: 180px;
+  transform: translateX(-50%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.18) 0,
+    rgba(255, 255, 255, 0) 55%
+  );
+  opacity: 0.3;
+  pointer-events: none;
+  filter: blur(6px);
+  z-index: -1;
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  #landing {
+    padding: 4rem 2.5rem;
+  }
+
+  #landing .hero-title {
+    font-size: 2.6rem;
+  }
+
+  #landing .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  #landing .primary-cta {
+    font-size: 0.95rem;
+  }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+  #landing {
+    padding: 5rem 3.5rem;
+  }
+
+  #landing .hero-title {
+    font-size: 3.1rem;
+  }
+
+  #landing .hero-subtitle {
+    font-size: 1.05rem;
+  }
+
+  #landing .landing-inner {
+    max-width: 860px;
+  }
+}
