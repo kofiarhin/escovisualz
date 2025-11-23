@@ -7,7 +7,11 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", async (req, res, next) => {
-  return res.json({ message: "hello world", status: "ok" });
+  return res.json({
+    message: "hello world",
+    status: "ok",
+    slug: "lets create something special together",
+  });
 });
 
 module.exports = app;
