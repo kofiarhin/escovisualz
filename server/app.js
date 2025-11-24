@@ -10,7 +10,7 @@ app.get("/", async (req, res, next) => {
   return res.json({
     message: "hello world",
     status: "ok",
-    slug: "lets create something special together",
+    date: new Date(),
   });
 });
 

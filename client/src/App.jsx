@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./app.styles.scss";
 import Home from "./Pages/Home/Home";
 import { BASE_URL } from "./constants/constants";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import { useEffect } from "react";
 
 const App = () => {
@@ -17,9 +19,11 @@ const App = () => {
   return (
     <div>
       <Router>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
