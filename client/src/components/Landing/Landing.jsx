@@ -41,12 +41,6 @@ const Landing = () => {
             .
           </p>
         </main>
-
-        <footer className="landing-footer">
-          <p className="footer-text">
-            © {new Date().getFullYear()} Escovisualz · Based in [Your City]
-          </p>
-        </footer>
       </div>
     </div>
   );

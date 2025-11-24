@@ -1,8 +1,11 @@
+import "./footer.styles.scss";
 const Footer = () => {
   return (
-    <div>
-      <h1 className="heading center">Footer</h1>
-    </div>
+    <footer id="footer">
+      <p className="footer-text">
+        © {new Date().getFullYear()} Escovisualz · Based in London/Uk
+      </p>
+    </footer>
   );
 };
 
